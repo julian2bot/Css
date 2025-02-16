@@ -1,43 +1,46 @@
 
 #car{
     position: absolute;
-    bottom: 80px;
-    left: 20px;
+    bottom: var(--bottom-voiture);
+    left: var(--left-voiture);
     /* right: 100%; */
     /* optimal */
     /* height: 160px;
     width: 300px; */
 
-    height: 80px;
-    width: 150px;
+    height: var(--taille-voiture-hauteur);
+    width: var(--taille-voiture-largeur);
     /* animation: moveCar 20s infinite; */
 }
 
 
 #arriere{
     position: absolute;
-    bottom: 5px;
-    height: 45%;
-    width: 40%;
+    bottom: var(--bottom-composant-voiture);
+    height: var(--hauteur-arriere-voiture);
+    width: var(--largeur-arriere-voiture);
     background-color: var(--couleur-voiture);
 
 }
 #milieu{
-    bottom: 5px;
-    left: 40%;
+    bottom: var(--bottom-composant-voiture);
+    left: var(--left-milieu-voiture);
     position: absolute;
     background-color: var(--couleur-voiture);
-    height: 80%;
-    width: 25%;
+    height: var(--hauteur-milieu-voiture);
+
+    width: var(--largeur-milieu-voiture);
+
     border-top-right-radius: 20px;
 }
 #avant{
     position: absolute;
-    bottom: 5px;
+    bottom: var(--bottom-composant-voiture);
     background-color: var(--couleur-voiture);
-    left: 65%;
-    height: 55%;
-    width: 35%;
+    left: var(--left-avant-voiture);
+    height: var(--hauteur-avant-voiture);
+    width: var(--largeur-avant-voiture);
+
 }
 
 /* vitre */
@@ -46,7 +49,7 @@
     position: absolute;
     width: 80%;
     height: 30%;
-    background-color: grey;
+    background-color: var(--couleur-vitre-voiture);
     top: 5%;
     left: 50%;
     translate: -50%;
@@ -57,12 +60,12 @@
     position: absolute;
     /* width: 50px;
     height: 50px; */
-    width: 30px;
-    height: 30px;
+    width: var(--taille-roue-voiture);
+    height: var(--taille-roue-voiture);
     
     top:100%;
     translate: 0 -70% ;
-    background-color: rgb(69, 69, 69);
+    background-color: var(--couleur-roue-voiture);
     border-radius: 50%;
 }
 
@@ -78,10 +81,10 @@
 } */
 
 #roueArriere{
-    left: 10%;
+    left: var(--position-roue-arriere);
 }
 #roueAvant{
-    right: 10%;
+    right: var(--position-roue-avant);
 }
 
 

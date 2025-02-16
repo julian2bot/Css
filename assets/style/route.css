@@ -2,16 +2,16 @@
     position: absolute;
     width: 200%;
     left: -30px;
-    bottom: 10px;
-    height: 100px; 
+    bottom: var(--bottom-route);
+    height: var(--hauteur-route); 
     background-color: grey;
 
 
-    -moz-transform: skew(23deg, 0deg);
-    -webkit-transform: skew(23deg, 0deg);
-    -o-transform: skew(23deg, 0deg);
-    -ms-transform: skew(23deg, 0deg);
-    transform: skew(23deg, 0deg);
+    -moz-transform: skew(var(--angle-route), 0deg);
+    -webkit-transform: skew(var(--angle-route), 0deg);
+    -o-transform: skew(var(--angle-route), 0deg);
+    -ms-transform: skew(var(--angle-route), 0deg);
+    transform: skew(var(--angle-route), 0deg);
 }
 #route::after{
     content: "";
@@ -28,4 +28,20 @@
         transparent 20px, 
         transparent 40px  
     );
+}
+
+.bordroute{
+    position: absolute;
+    background-color: green;
+    width: 100%;
+}
+#routebas{
+    height: var(--hauteur-bord-bas-route);
+    bottom: var(--bottom-hauteur-bord-bas-route);
+    
+}
+
+#routehaut{
+    height: var(--hauteur-bord-haut-route);
+    bottom: var(--bottom-hauteur-bord-haut-route);
 }

@@ -3,11 +3,60 @@
     padding: 0;
 }
 :root{
+    /* les couleurs */
     --couleur-voiture:red;
+    --couleur-vitre-voiture:grey;
+    --couleur-roue-voiture:rgb(69, 69, 69);
+
+    --couleur-ciel:red;
+    --couleur-sun:red;
+    
+    
+    --couleur-trait-route:red;
+    --couleur-bord-route:red;
+    --couleur-roure:red;
+    
+
+    /* route */
+    --angle-route:23deg;
+    --hauteur-route:100px;
+    --bottom-route:10px;
+
+    --bottom-hauteur-bord-bas-route:0px;
+    --bottom-hauteur-bord-haut-route:calc(var(--bottom-route) + var(--hauteur-route));
+    --hauteur-bord-haut-route:4%;
+    --hauteur-bord-bas-route:var(--bottom-route);
+    
+
+    /* voiture */
+    --taille-voiture-hauteur:80px;
+    --taille-voiture-largeur:150px;
+    --bottom-voiture:80px;
+    --left-voiture:80px;
+    --bottom-composant-voiture:5px;
+    
+    --largeur-arriere-voiture:40%;
+    --largeur-milieu-voiture:25%;
+    --largeur-avant-voiture:35%;
+
+    --hauteur-arriere-voiture:45%;
+    --hauteur-milieu-voiture:80%;
+    --hauteur-avant-voiture:55%;
+
+    --left-arriere-voiture:0px;
+    --left-milieu-voiture:calc(var(--largeur-arriere-voiture) + var(--left-arriere-voiture));
+    --left-avant-voiture:calc(var(--left-milieu-voiture) + var(--largeur-milieu-voiture));
+
+        /* roue */
+    --taille-roue-voiture:30px;
+    --position-roue-avant:10%;
+    --position-roue-arriere:10%;
 }
+
 html, body{
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    background-color: greenyellow;
+    background: linear-gradient(217deg, rgba(255, 221, 0, 0.8), rgba(255,0,0,0) 6.71%), /*sun*/
+                linear-gradient(180deg, skyblue, white);
 }
