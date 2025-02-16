@@ -10,7 +10,7 @@
     z-index: 1000;
     height: var(--taille-voiture-hauteur);
     width: var(--taille-voiture-largeur);
-    animation: moveCar 20s infinite;
+    animation: moveCar var(--duree-move-voiture) infinite;
 }
 
 

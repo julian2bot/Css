@@ -32,6 +32,8 @@
     
 
     /* voiture */
+    --duree-move-voiture:20s;
+
     --taille-voiture-hauteur:80px;
     --taille-voiture-largeur:150px;
     --bottom-voiture:80px;
@@ -74,6 +76,9 @@
 
     --couleur-neige:#dddddd;
     --couleur-ombre-neige:#c3c3c3;
+
+    /* nuage */
+    --duree-move-cloud: 15s;
 }
 
 html, body{

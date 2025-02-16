@@ -1,0 +1,105 @@
+#clouds{
+    /* background-color: red; */
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+
+#clouds > *{
+    position: absolute;
+    background-color: white;
+    height: 27px;
+    width: 100px;
+    top: 40%;
+    left: 100%;
+    border-radius: 50px;
+    /* animation: moveCloud var(--duree-move-cloud) linear infinite; */
+}
+
+#clouds > *::after, #clouds > *::before{
+    position: absolute;
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+}
+
+#clouds > *::after{
+    width: 30px;
+    height: 30px;
+    bottom:100%;
+    left: 14%;
+    translate: 0 50%;
+    scale: 1.1;
+}
+#clouds > *::before{
+    width: 40px;
+    height: 40px;
+    left: calc(10% + 39px);
+    bottom:100%;
+    translate: 0 50%;
+    scale: 1.3;
+}
+
+
+#cloud1{
+    top:10% ;
+    animation: moveCloud var(--duree-move-cloud) 0s linear infinite;
+    /* left:10% ; */
+}
+#cloud2{
+    top:20%;
+    /* left: ; */
+    animation: moveCloud var(--duree-move-cloud) 5s linear infinite;
+}
+#cloud3{
+    top:25% ;
+    animation: moveCloud var(--duree-move-cloud) 2s linear infinite;
+    /* left: 60%; */
+}
+#cloud4{
+    top:70% ;
+    animation: moveCloud var(--duree-move-cloud) 4s linear infinite;
+    /* left:10% ; */ 
+}
+#cloud5{
+    top:40% ;
+    animation: moveCloud var(--duree-move-cloud) 4s linear infinite;
+    /* left: ; */
+}
+
+#cloud6{
+    top:30% ;
+    animation: moveCloud var(--duree-move-cloud) 6s linear infinite;
+    
+}
+#cloud7{
+    top:30%;
+    
+    animation: moveCloud var(--duree-move-cloud) 8s linear infinite;
+}
+
+#cloud8{
+    top: 20%;
+    animation: moveCloud var(--duree-move-cloud) 10s linear infinite;
+}
+#cloud9{
+    top: 25%;
+    animation: moveCloud var(--duree-move-cloud) 12s linear infinite;
+}
+#cloud10{
+    top: 70%;
+    animation: moveCloud var(--duree-move-cloud) 15s linear infinite;
+}
+#cloud11{
+    top: 40%;
+    animation: moveCloud var(--duree-move-cloud) 14s linear infinite;
+}
+
+@keyframes moveCloud {
+    from{
+
+    }
+    to{
+        left:-120%;
+    }
+}
