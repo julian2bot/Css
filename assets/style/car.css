@@ -1,0 +1,83 @@
+
+#car{
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    /* optimal */
+    /* height: 160px;
+    width: 300px; */
+
+    height: 80px;
+    width: 150px;
+}
+
+
+#arriere{
+    position: absolute;
+    bottom: 5px;
+    height: 45%;
+    width: 40%;
+    background-color: var(--couleur-voiture);
+
+}
+#milieu{
+    bottom: 5px;
+    left: 40%;
+    position: absolute;
+    background-color: var(--couleur-voiture);
+    height: 80%;
+    width: 25%;
+    border-top-right-radius: 20px;
+}
+#avant{
+    position: absolute;
+    bottom: 5px;
+    background-color: var(--couleur-voiture);
+    left: 65%;
+    height: 55%;
+    width: 35%;
+}
+
+/* vitre */
+#milieu::after{ 
+    content:"";
+    position: absolute;
+    width: 80%;
+    height: 30%;
+    background-color: grey;
+    top: 5%;
+    left: 50%;
+    translate: -50%;
+    border-top-right-radius: 15px;
+}
+
+.roue{
+    position: absolute;
+    /* width: 50px;
+    height: 50px; */
+    width: 30px;
+    height: 30px;
+    
+    top:100%;
+    translate: 0 -70% ;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+/* truc des roues */
+/* .roue::after{
+    content:"";
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background-color: green;
+    border-top-left-radius:10000% ;
+    border-top-right-radius: 10000%;
+} */
+
+#roueArriere{
+    left: 10%;
+}
+#roueAvant{
+    right: 10%;
+}
