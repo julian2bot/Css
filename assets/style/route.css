@@ -4,7 +4,7 @@
     left: -30px;
     bottom: var(--bottom-route);
     height: var(--hauteur-route); 
-    background-color: grey;
+    background-color: var(--couleur-route);
 
 
     -moz-transform: skew(var(--angle-route), 0deg);
@@ -23,8 +23,8 @@
     
     background: repeating-linear-gradient(
         90deg, 
-        orange,   
-        orange 20px, 
+        var(--couleur-trait-route),   
+        var(--couleur-trait-route) 20px, 
         transparent 20px, 
         transparent 40px  
     );
@@ -32,7 +32,8 @@
 
 .bordroute{
     position: absolute;
-    background-color: green;
+    /* background-color: linear-gradient(180deg, rgb(0, 119, 16), green); */
+    background-color: var(--couleur-bord-route);
     width: 100%;
 }
 #routebas{

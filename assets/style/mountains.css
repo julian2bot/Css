@@ -261,6 +261,18 @@
 }
 
 
+
+.snow::before{
+    position: absolute;
+    content: "";
+    left: -5px;
+    bottom: -135px;
+
+    border-bottom: 0px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 35px solid var(--couleur-neige);
+    border-left: 18px solid transparent;
+}
 /* 
 #premierPlan > *{
     z-index: 0;

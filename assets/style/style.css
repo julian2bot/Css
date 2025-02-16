@@ -12,9 +12,9 @@
     --couleur-sun:rgba(255, 221, 0, 0.8);
     
     
-    --couleur-trait-route:red;
-    --couleur-bord-route:red;
-    --couleur-route:red;
+    --couleur-trait-route:orange;
+    --couleur-bord-route: rgb(0, 102, 0);
+    --couleur-route:grey;
     
     
     /* --couleur-fond-montagne:red; */
