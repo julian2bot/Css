@@ -16,6 +16,9 @@
     --couleur-bord-route:red;
     --couleur-roure:red;
     
+    
+    /* --couleur-fond-montagne:red; */
+    
 
     /* route */
     --angle-route:23deg;
@@ -24,8 +27,8 @@
 
     --bottom-hauteur-bord-bas-route:0px;
     --bottom-hauteur-bord-haut-route:calc(var(--bottom-route) + var(--hauteur-route));
-    --hauteur-bord-haut-route:4%;
     --hauteur-bord-bas-route:var(--bottom-route);
+    --hauteur-bord-haut-route:4%;
     
 
     /* voiture */
@@ -51,6 +54,19 @@
     --taille-roue-voiture:30px;
     --position-roue-avant:10%;
     --position-roue-arriere:10%;
+
+    /* montagne */
+    --bottom-hauteur-montagne:calc(var(--bottom-hauteur-bord-haut-route) + var(--hauteur-bord-haut-route));
+    --hautaur-montagne:40%;
+
+    --couleur-montagne:#249e49;
+    --couleur-ombre-montagne:#357639;
+
+    --couleur-montagne-pierre:#6f8375;
+    --couleur-ombre-montagne-pierre:#333534;
+
+    --couleur-neige:#dddddd;
+    --couleur-ombre-neige:#c3c3c3;
 }
 
 html, body{
