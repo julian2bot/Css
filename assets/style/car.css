@@ -1,14 +1,16 @@
 
 #car{
     position: absolute;
-    bottom: 40px;
+    bottom: 80px;
     left: 20px;
+    /* right: 100%; */
     /* optimal */
     /* height: 160px;
     width: 300px; */
 
     height: 80px;
     width: 150px;
+    /* animation: moveCar 20s infinite; */
 }
 
 
@@ -60,7 +62,7 @@
     
     top:100%;
     translate: 0 -70% ;
-    background-color: gray;
+    background-color: rgb(69, 69, 69);
     border-radius: 50%;
 }
 
@@ -80,4 +82,15 @@
 }
 #roueAvant{
     right: 10%;
+}
+
+
+
+@keyframes moveCar {
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
 }

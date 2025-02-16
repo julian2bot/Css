@@ -1,0 +1,31 @@
+#route{
+    position: absolute;
+    width: 200%;
+    left: -30px;
+    bottom: 10px;
+    height: 100px; 
+    background-color: grey;
+
+
+    -moz-transform: skew(23deg, 0deg);
+    -webkit-transform: skew(23deg, 0deg);
+    -o-transform: skew(23deg, 0deg);
+    -ms-transform: skew(23deg, 0deg);
+    transform: skew(23deg, 0deg);
+}
+#route::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    width: 100%;
+    height: 10px; 
+    
+    background: repeating-linear-gradient(
+        90deg, 
+        orange,   
+        orange 20px, 
+        transparent 20px, 
+        transparent 40px  
+    );
+}
