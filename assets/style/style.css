@@ -4,17 +4,17 @@
 }
 :root{
     /* les couleurs */
-    --couleur-voiture:red;
+    --couleur-voiture:rgb(255, 136, 0);
     --couleur-vitre-voiture:grey;
     --couleur-roue-voiture:rgb(69, 69, 69);
 
-    --couleur-ciel:red;
-    --couleur-sun:red;
+    --couleur-ciel:skyblue;
+    --couleur-sun:rgba(255, 221, 0, 0.8);
     
     
     --couleur-trait-route:red;
     --couleur-bord-route:red;
-    --couleur-roure:red;
+    --couleur-route:red;
     
     
     /* --couleur-fond-montagne:red; */
@@ -62,8 +62,15 @@
     --couleur-montagne:#249e49;
     --couleur-ombre-montagne:#357639;
 
+    
+    --couleur-montagne2:#187a35;
+    --couleur-ombre-montagne2:#295c2c;
+
     --couleur-montagne-pierre:#6f8375;
     --couleur-ombre-montagne-pierre:#333534;
+
+    --couleur-montagne-pierre2:#546258;
+    --couleur-ombre-montagne-pierre2:#262827;
 
     --couleur-neige:#dddddd;
     --couleur-ombre-neige:#c3c3c3;
@@ -73,6 +80,6 @@ html, body{
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    background: linear-gradient(217deg, rgba(255, 221, 0, 0.8), rgba(255,0,0,0) 6.71%), /*sun*/
-                linear-gradient(180deg, skyblue, white);
+    background: linear-gradient(217deg, var(--couleur-sun), rgba(255,0,0,0) 6.71%), /*sun*/
+                linear-gradient(180deg, var(--couleur-ciel), white);
 }

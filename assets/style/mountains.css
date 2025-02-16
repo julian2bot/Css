@@ -171,7 +171,7 @@
 
 
 #mountain-fond-1{
-    left:-20px;
+    left:50px;
     border-bottom-width: 350px;
 }
 #mountain-fond-2{
@@ -243,6 +243,24 @@
 .pierre::after{
     border-bottom-color: var(--couleur-ombre-montagne-pierre);
 }
+
+.vert2{
+    border-bottom-color: var(--couleur-montagne2);
+}
+
+.vert2::after{
+    border-bottom-color: var(--couleur-ombre-montagne2);
+}
+
+.pierre2{
+    border-bottom-color: var(--couleur-montagne-pierre2);
+}
+
+.pierre2::after{
+    border-bottom-color: var(--couleur-ombre-montagne-pierre2);
+}
+
+
 /* 
 #premierPlan > *{
     z-index: 0;
